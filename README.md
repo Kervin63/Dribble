@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date:
+## Date:13.10.2025
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -40,7 +40,7 @@ design.html
       background-color: #f8f9fa;
     }
 
-    /* Navbar Styling */
+
     .navbar {
       background-color: blue;
       flex-direction: column;
@@ -56,7 +56,7 @@ design.html
       font-size: 24px;
     }
 
-    /* Under dribbble - Designers, Teams, etc. */
+    
     .sub-links {
       display: flex;
       gap: 20px;
@@ -75,7 +75,7 @@ design.html
       text-decoration: underline;
     }
 
-    /* Dropdown look links (Shots, Popular, Now) */
+    
     .controls {
       text-align: center;
       margin: 25px 0;
@@ -106,7 +106,7 @@ design.html
       padding-bottom: 5px;
     }
 
-    /* Image Cards */
+    
     .card img {
       transition: transform 0.3s ease;
     }
@@ -145,7 +145,7 @@ design.html
 </head>
 <body>
 
-  <!-- Navbar -->
+  
   <nav class="navbar">
     <div>
       <a class="navbar-brand" href="#">Galaxy</a>
@@ -176,14 +176,14 @@ design.html
 </nav>
 
 
-  <!-- Fake Dropdown Controls -->
+  
   <div class="controls">
     <a href="#">Recent</a>
     <a href="#">Popular</a>
     <a href="#">Filters</a>
   </div>
 
-  <!-- Image Grid -->
+  
   <div class="container mt-4">
     <div class="row g-4">
       <!-- Repeat your image cards -->
