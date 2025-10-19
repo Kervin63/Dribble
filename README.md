@@ -28,238 +28,90 @@ Publish the website in the LocalHost.
 ## PROGRAM :
 ```
 design.html
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample Design</title>
+  <title>Sample Webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-
-
-    .navbar {
-      background-color: blue;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: 40px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-
-    .navbar-brand {
-      color: white;
-      font-weight: bold;
-      font-size: 24px;
-    }
-
-    
-    .sub-links {
-      display: flex;
-      gap: 20px;
-      margin-top: 8px;
-    }
-
-    .sub-links a {
-      color: #ccc;
-      text-decoration: none;
-      font-size: 15px;
-      transition: all 0.3s ease;
-    }
-
-    .sub-links a:hover {
-      color: white;
-      text-decoration: underline;
-    }
-
-    
-    .controls {
-      text-align: center;
-      margin: 25px 0;
-    }
-
-    .controls a {
-      margin: 0 20px;
-      font-size: 18px;
-      color: #6c757d;
-      text-decoration: none;
-      position: relative;
-      transition: all 0.3s ease;
-      font-weight: 500;
-    }
-
-    .controls a::after {
-      content: " ▼";
-      font-size: 12px;
-      color: #6c757d;
-    }
-    .me-4{
-      text-align: right;
-
-    }
-    .controls a:hover {
-      color: #000;
-      border-bottom: 3px solid #ff4081;
-      padding-bottom: 5px;
-    }
-
-    
-    .card img {
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover img {
-      transform: scale(1.05);
-    }
-
-    .card {
-      border: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card-title {
-      font-weight: 600;
-      font-size: 15px;
-      color: #333;
-    }
-
-    
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #333;
-      margin-top: 30px;
-    }
-  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
-  
-  <nav class="navbar">
-    <div>
-      <a class="navbar-brand" href="#">Galaxy</a>
-      <div class="sub-links">
-        <a href="#">Orders</a>
-        <a href="#">Cart</a>
-        <a href="#">Community</a>
-        <a href="#">Account</a>
-      </div>
-    </div>
-  </nav>
-  <div class="me-4">
-   <ul class="nav navbar-nav navbar-right">
+<nav class="navbar navbar-default bg-success text-white">
+    <div class="container-fluid">
+       
+     <h3 >Galaxy</h3>
+     
+     
+         <ul class="nav navbar-nav " >
+        <li>Orders &nbsp;
+         Community  &nbsp;
+          Cart  &nbsp;
+        Account</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
              <li>Sign up  &nbsp;
          Sign in
-             </li>
+         
         </ul>
         </div>
 </nav>
-
-  <nav class="nav navbar-default bg-danger text-white">
+<nav class="nav navbar-default bg-danger text-white">
     <ul class="nav navbar-nav mx-auto py-3">
-        <p class="text-center">What are you looking for? <span class="text-light">Galaxy is awesome platform to buy anything</span></p>
+        <p class="text-center">What are you looking for? <span class="text-light">Galaxy is awesome platform to buy anything.</span></p>
        <li> <button type="button" class="btn btn-primary text-white">Learn More</button>
         <button type="button" class="btn btn-danger">Sign up</button></li>
         
     </ul>
 </nav>
-
-
-  
-  <div class="controls">
-    <a href="#">Recent</a>
-    <a href="#">Popular</a>
-    <a href="#">Filters</a>
-  </div>
-
-  
-  <div class="container mt-4">
-    <div class="row g-4">
-      <!-- Repeat your image cards -->
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="phone.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Phones</h6>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="laptop.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Laptops</h6>
-            
-          </div>
-        </div> 
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="tab.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Tablets</h6>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="watch.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">SmartWatches</h6>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="headphone.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Headphones</h6>
-           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-6">
-        <div class="card">
-          <img src="pc.jpeg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h6 class="card-title">Computers</h6>
-            
-          </div>
-        </div>
-      </div>
+<nav class="navbar navbar-default bg-warning">
+     <ul class="nav navbar-nav mx-auto ">
+        <li class="dropdown">Recent &#9662; &nbsp; Popular  &#9662; &nbsp; Filters  &#9662;</li>
+        
+     </ul>
+</nav>
+<br>
+<div class="row ">
+    <div class="col-md-2">
+        <img src="headphone.jpeg" height="200" width="200"><br>
+        <p>HeadPhones</p>
     </div>
-  </div>
+    <div class="col-md-2">
+        <img src="laptop.jpeg" height="200" width="200"><br>
+        <p>Laptops</p>
+    </div>
+    <div class="col-md-2">
+        <img src="pc.jpeg" height="200" width="200"><br>
+        <p>Computers</p>
+    </div>
+    <div class="col-md-2">
+        <img src="tab.jpeg" height="200" width="200"><br>
+        <p>Tablets</p>
+    </div>
+    <div class="col-md-2">
+        <img src="watch.jpeg" height="200" width="200"><br>
+        <p>Smart Watches</p>
+    </div>
+    <div class="col-md-2">
+        <img src="phone.jpeg" height="200" width="200"><br>
+        <p>Smart phnoes</p>
+    </div>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 align="center">Kervin.S(25012113)</h3>
+    </div>
+</div>
 
-  <footer>
-    <p>© Designed by S.Kervin(25012113)</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
 ```
 ## OUTPUT:
-![alt text](<Screenshot 2025-10-13 093741.png>)
+![alt text](<Screenshot 2025-10-19 183747.png>)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
